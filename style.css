@@ -1,0 +1,39 @@
+.bigimage {
+    display: block;
+}
+
+.mediumimage {
+    display: none;
+}
+
+.smallimage {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .bigimage {
+        display: none;
+    }
+    
+    .mediumimage {
+        display: block;
+    }
+    
+    .smallimage {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .bigimage {
+        display: none;
+    }
+    
+    .mediumimage {
+        display: none;
+    }
+    
+    .smallimage {
+        display: block;
+    }
+}
