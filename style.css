@@ -10,7 +10,7 @@
     display: none;
 }
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:991px) {
     .bigimage {
         display: none;
     }
@@ -24,7 +24,7 @@
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
     .bigimage {
         display: none;
     }
@@ -36,4 +36,16 @@
     .smallimage {
         display: block;
     }
+}
+
+@media only screen and (orientation: portrait) {
+    [class*="navbar"] {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+article {
+    padding-top: 60px;
 }
