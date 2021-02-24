@@ -10,6 +10,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Where to eat</title>
 
+
     <style type="text/css">
         /* Set the size of the div element that contains the map */
         #map {
@@ -23,25 +24,24 @@
         // Initialize and add the map
         function initMap() {
             // The location of Uluru
-            const uluru = { lat: -25.344, lng: 131.036 };
+            const london = { lat: 51.5074 , lng:  0.1278 };
             // The map, centered at Uluru
             const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 4,
-                center: uluru,
+                center: london,
             });
             // The marker, positioned at Uluru
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
+            // const marker = new google.maps.Marker({
+            //     position: uluru,
+            //     map: map,
+            // });
         }
     </script>
 </head>
 
 <body>
 
-
-
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -55,7 +55,10 @@
             </li>
         </ul>
     </nav>
-    
+    <h1>Under construction</h1>
+
+    <p>Meanwhile you can try making your own lasagna using the  <a href="pages/favourite.html">recipe</a></p>
+
     <article>
 
         <div id="map"></div>
