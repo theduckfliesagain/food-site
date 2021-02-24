@@ -60,10 +60,10 @@
     .restaurant-grid > section > img{
         filter: none;
     }
-}    
 
 .bigimage {
     display: block;
+    padding-bottom: 20px;
 }
 
 .mediumimage {
@@ -114,7 +114,7 @@
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 310px) {
     [class*="navbar"] {
         position: fixed;
         width: 100%;
