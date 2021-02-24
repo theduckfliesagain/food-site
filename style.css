@@ -5,9 +5,8 @@
 .restaurant-grid {
     display: grid;
     margin-top: 50px;
-
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 
@@ -31,9 +30,9 @@
 
 .restaurant-grid > section > img:hover{
     filter: none;
-    
-    
 }
+
+
 
 
 @media only screen and (max-width: 480px) {
@@ -43,9 +42,16 @@
 
     .restaurant-grid > section {
         padding: 20px;
-        margin: 20px ;
-        border: 5px solid black;
-        border-radius: 20px;
+        margin: 10px ;
+    }
+
+    .restaurant-grid > section > img{
+        display: none;
+        width: 100%;
+        border-radius: 10px;
+        filter: grayscale(100%);
+        justify-content: center;
+        align-content: bottom;
     }
 
 }
