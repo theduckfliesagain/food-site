@@ -108,8 +108,26 @@
         width: 100%;
         z-index: 999;
     }
+
+    article {
+        padding-top: 60px;
+    }
 }
 
-/* article {
-    padding-top: 60px;
-} */
+@media only screen and (max-width: 300px) {
+    [class*="navbar"] {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        flex-direction: column;
+    }
+
+    ul[class*="nav"] {
+        display: block;
+    }
+
+    article {
+        padding-top: 150px;
+    }
+}
+  
