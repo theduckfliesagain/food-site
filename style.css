@@ -1,3 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+
+.restaurant-grid {
+    display: grid;
+    margin-top: 50px;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+
+.restaurant-grid > section {
+    padding: 50px;
+    margin: 20px ;
+    border: 2px solid rgb(17, 17, 17);
+    background-color: rgb(17, 17, 17);
+    color:white;
+    border-radius: 20px;
+}
+
+.restaurant-grid > section > img{
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    justify-content: center;
+    align-content: bottom;
+}
+
+
+.restaurant-grid > section > img:hover{
+    filter: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .restaurant-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .restaurant-grid > section {
+        padding: 20px;
+        margin: 20px ;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+}
+
+@media  (hover: none) {
+    .restaurant-grid > section > img{
+        filter: none;
+    }
+    
+=======
 .bigimage {
     display: block;
 }
@@ -66,4 +122,4 @@
         padding-top: 150px;
     }
 }
-
+  
